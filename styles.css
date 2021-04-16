@@ -51,6 +51,11 @@ body {
     justify-content: center;
     align-items: center;
 }
+.logo img {
+    width: 100px;
+    height: 100px;
+
+}
 
 .fa {
     color: black
