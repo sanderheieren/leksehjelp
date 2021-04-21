@@ -14,7 +14,7 @@ body {
     justify-content: center;
     background-color: steelblue;
     color: rgb(36, 37, 131);
-    overflow: hidden;
+    padding: 10px;
 }
 
 .container {
@@ -25,24 +25,28 @@ body {
     align-items: center;
     padding: 20px 40px;
     border-radius: 5px;
-}
+    max-width: 700px;
+    min-width: 400px;
+    width: 70%;
+    max-height: 100%;
+    overflow: hidden;
 
-.container h1 {
-    text-align: center;
-    margin-bottom: 30px;
 }
 
 .container .logo {
     text-align: center;
-}
-
-.container .logo i {
-    font-size: 50px;
+    width: 100%;
 }
 
 .container a {
     text-decoration: none;
     color: red;
+}
+
+.logo-wrapper {
+    background-size: contain;
+    width: 100%;
+    max-width: 300px;
 }
 
 .container form {
@@ -51,26 +55,84 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.container .form-control {
+    margin: 10px 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-control input {
+    border: none;
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,0.5);
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: inherit;
+    font-family: inherit;
+}
+
 .logo img {
     width: 100px;
     height: 100px;
-
 }
 
-.fa {
-    color: black
+i.fa {
+    color: black;
+    margin-right: 7px;
 }
 
+i.fa.fa-lock {
+    margin-right: 12px;
+}
 
+.login {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+}
+
+.bilde {
+    width: 100px;
+    height: 100px;
+    min-width: 100px;
+    min-height: 100px;;
+    cursor: pointer;
+    border: 1px black solid;
+    margin: 2px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: black;
+    font-size: 16px;
+    font-family: "Muli";
+  }
+input:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
 
 .btn {
     cursor: pointer;
     display: inline-block;
-    width: 50%;
-    background-color: lightgreen;
-    padding: 15px;
+    width: 100%;
+    background-color: rgb(169,209,40);
+    padding: 10px 15px;
     font-family: inherit;
     font-size: 16px;
     border: 0;
     border-radius: 5px;
+    margin: 10px 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    font-weight: bold;
+    overflow: hidden;
+  }
+
+  input:focus {
+      outline: none;
   }
